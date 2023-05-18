@@ -5,6 +5,7 @@
         <tr valign="top">
             <td><img src="{{ avatar.avatar(128) }}"></td>
             <td><h1>User: {{ g.user['username'] }}</h1></td>
+            <td><a class="action" href="{{ url_for('profile.update_user', id=g.user['id']) }}">Edit</a></td>
         </tr>
     </table>
 {% endblock %}

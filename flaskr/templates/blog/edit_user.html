@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="post">
+        <label for="username">username</label>
+        <input name="username" id="username"
+        value="{{ request.form['username']}}" required>
+        <input type="submit" name="" id="" value="Save">
+    </form>
+{% endblock %}
